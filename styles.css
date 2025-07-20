@@ -190,6 +190,33 @@ button:hover{
     display: block;
 }
 
+.recommended-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.recommended-product{
+    margin-top: 20px;
+}
+
+.recommended-product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.recommended-product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
 @media (max-width: 480px) {
     .Products-grid {
         

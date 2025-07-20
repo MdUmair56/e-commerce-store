@@ -39,7 +39,6 @@ function showproductDetails(productId) {
         return;
     }
 
-
     const detailsContainer = document.getElementById("Product-details");
     const productsContainer = document.getElementById("Products-container");
 
@@ -48,7 +47,7 @@ function showproductDetails(productId) {
 
     // Create similar products HTML
     const recommendedHTML = similarProducts.length > 0 
-        ? `<h3>Recommended Products</h3>
+        ? `<h3 class="recommended-product">Recommended Products</h3>
            <div class="recommended-products">
                ${similarProducts.slice(0, 4).map(p => `
                    <div class="recommended-product-card">
@@ -133,7 +132,7 @@ function updateCartUI() {
         cartItemsContainer.innerHTML += itemHTML;
     });
 
-    cartTotalElement.textContent = `INR ${total.toFixed(2)}`;
+    cartTotalElement.textContent = `Total: INR ${total.toFixed(2)}`;
     cartCountElement.textContent = count;
 }
 

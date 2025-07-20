@@ -16,23 +16,28 @@
         <div>
             <button onclick="showProducts()">All Products</button>
         </div>
+
         <div class="cart-icon" onclick="tooglecart()">
             <span class="cart-count">0</span>
             <i class='fas fa-cart-plus'></i>
         </div>
     </nav>
+
     <main>
         <div class="Products-grid" id="Products-container"></div>
         <div class="Product-details" id="Product-details"></div>
     </main>
 
     <div class="overlay" id="overlay"></div>
+
     <div id="cart-modal">
         <div class="modal-header">
             <h2>Shopping Cart</h2>
             <button class="close-modal" onclick="tooglecart()">x</button>
         </div>
+
         <div class="Cart-item" id="cart-items"></div>
+
         <div class="cart-total">
         <h3><span id="cart-total"></span></h3>
         </div>
